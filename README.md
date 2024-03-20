@@ -20,11 +20,3 @@ Here are some ideas to get you started:
   Visitor count<br>
   <img src="https://profile-counter.glitch.me/yunliang-ding/count.svg" />
 </p>
-
-### Frontend Advanced
-
-- [es6 入门](https://es6.ruanyifeng.com/) [阮一峰](https://www.ruanyifeng.com/blog/javascript) [渡一前端频道](https://www.douyin.com/user/MS4wLjABAAAAi2oukRVcHpgD-HbVdzsxE7tYykr91YuIKukR_X_Yy08EFWRQhRrECDF6FvbvT8Xa) [高级前端进阶](https://muyiy.cn/blog) [前端充电宝](https://www.yuque.com/cuggz) [前端面试宝典](https://lucifer.ren/fe-interview)
-
-- [你不知道的 Javascript(上)](https://my-dev-ops.oss-cn-beijing.aliyuncs.com/website/es5-1.pdf) [你不知道的 Javascript(中)](https://my-dev-ops.oss-cn-beijing.aliyuncs.com/website/es5-2.pdf) [你不知道的 Javascript(下)](https://my-dev-ops.oss-cn-beijing.aliyuncs.com/website/es5-3.pdf) [深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/)
-
-- [前端进阶之旅](https://interview.poetries.top) [React 技术揭秘](https://react.iamkasong.com) [秋风的笔记](https://www.qiufeng.blue/react) [神三元博客](https://sanyuan0704.github.io)
