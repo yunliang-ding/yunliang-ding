@@ -1,0 +1,59 @@
+{
+  "name": "lyr-react-docs",
+  "description": "组件库文档",
+  "author": "yunliang-ding",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "dumi dev",
+    "docs:build": "dumi build",
+    "build": "father-build"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "keywords": [
+    "react",
+    "monaco",
+    "code-editor"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yunliang-ding/yunliang-ding"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "devDependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "@babel/runtime": "7.16.0",
+    "dumi": "^1.0.14",
+    "eslint": "^7.27.0",
+    "father-build": "^1.17.2",
+    "less": "3.5.0",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.1",
+    "yorkie": "^2.0.0",
+    "@types/react": "17.0.2"
+  },
+  "resolutions": {
+    "@types/react": "17.0.2"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}
