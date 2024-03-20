@@ -5,8 +5,9 @@ export default defineConfig({
   title: 'Yunliang Ding',
   outputPath: 'docs-dist',
   locales: [['zh-CN', '中文']],
-  favicon: 'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/assets/favicon.ico',
-  logo: 'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/assets/favicon.ico',
+  favicon:
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/assets/user-logo.png',
+  logo: 'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/assets/user-logo.png',
   metas: [
     {
       name: 'yunliang-ding',
@@ -36,6 +37,12 @@ export default defineConfig({
       font-weight: 500 !important;
       font-size: 12px !important;
     }
+    .__dumi-default-layout-hero{
+      display: none;
+    }
+    .__dumi-default-layout-hero + .__dumi-default-layout-content{
+      margin-top: 0 !important;
+    }
     .__dumi-default-menu-list
       > li
       > a {
@@ -55,7 +62,9 @@ export default defineConfig({
   hash: false,
   links: [],
   scripts: [
+    `window.__trackid__="我的主页"`,
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/spider.web.min.js',
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/track.min.js"',
   ],
   navs: [
     null, // null 值代表保留约定式生成的导航，只做增量配置
@@ -64,17 +73,4 @@ export default defineConfig({
       path: 'https://github.com/yunliang-ding',
     },
   ],
-  apiParser: {
-    // 自定义属性过滤配置，也可以是一个函数，用法参考：https://github.com/styleguidist/react-docgen-typescript/#propfilter
-    propFilter: {
-      // 是否忽略从 node_modules 继承的属性，默认值为 false
-      skipNodeModules: true,
-      // 需要忽略的属性名列表，默认为空数组
-      skipPropsWithName: [],
-      // 是否忽略没有文档说明的属性，默认值为 false
-      skipPropsWithoutDoc: true,
-    },
-  },
-  chainWebpack(config, { webpack }) {},
-  // more config: https://d.umijs.org/config
 });
