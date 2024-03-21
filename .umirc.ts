@@ -64,7 +64,7 @@ export default defineConfig({
   scripts: [
     `window.__trackid__="我的主页"`,
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/spider.web.min.js',
-    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/track.min.js"',
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/track.min.js',
   ],
   navs: [
     null, // null 值代表保留约定式生成的导航，只做增量配置
