@@ -34,10 +34,6 @@ Here are some ideas to get you started:
 
 - [前端进阶之旅](https://interview.poetries.top) [React 技术揭秘](https://react.iamkasong.com) [秋风的笔记](https://www.qiufeng.blue/react) [神三元博客](https://sanyuan0704.github.io)
 
-### Educational experience
-
-- [在线简历附件.pdf](https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/assets/%E5%B7%A5%E4%BD%9C%E7%AE%80%E5%8E%86.pdf)
-
 <code style="position:fixed;bottom:10px;right:10px;font-family: system-ui;">
   <a href="https://beian.miit.gov.cn">浙ICP备2023019046号-1</a>
 </code>
