@@ -40,6 +40,9 @@ export default defineConfig({
     .__dumi-default-layout-hero{
       display: none;
     }
+    .__dumi-default-alert{
+      font-size: 12px !important;
+    }
     .__dumi-default-layout-hero + .__dumi-default-layout-content{
       margin-top: 0 !important;
     }
