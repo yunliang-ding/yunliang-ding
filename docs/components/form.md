@@ -89,13 +89,13 @@ export default () => {
                 ? {
                     type: 'Input',
                     props: {
-                      placeHolder: '请输入',
+                      placeholder: '请输入',
                     },
                   }
                 : {
                     type: 'Select',
                     props: {
-                      placeHolder: '请选择',
+                      placeholder: '请选择',
                       options: [
                         {
                           label: '选项 1',
