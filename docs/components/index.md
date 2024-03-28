@@ -3,7 +3,7 @@ order: 1
 title: Button 扩展
 toc: menu
 nav:
-  title: 每日心得
+  title: Blog
   order: 1
 ---
 
