@@ -86,4 +86,4 @@ export default () => {
 
 ### 实现原理
 
-- 具体源码和 Demo 参看 [lyr-store](https://dev-ops.yunliang.cloud/website/lyr-store)
+- 具体源码和 Demo 参看 [lyr-hooks](https://dev-ops.yunliang.cloud/website/lyr-hooks)
