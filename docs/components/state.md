@@ -12,10 +12,10 @@ toc: menu
 
 ```jsx | pure
 import React from 'react';
-import { reactive } from 'lyr-store';
+import { useReactive } from 'lyr-hooks';
 
 export default () => {
-  const state = reactive({
+  const state = useReactive({
     count: 0,
     age: 0,
     user: {
@@ -56,7 +56,7 @@ export default () => {
 
 ```jsx | pure
 import React from 'react';
-import { create } from 'lyr-store';
+import { create } from 'lyr-hooks';
 
 export const store = create({
   count: 1,
@@ -86,5 +86,4 @@ export default () => {
 
 ### 实现原理
 
-- 基于 use-sync-external-store 库
-- 具体源码和 Demo 参看 [lyr-store](https://dev-ops.yunliang.cloud/website/lyr-design#/store)
+- 具体源码和 Demo 参看 [lyr-store](https://dev-ops.yunliang.cloud/website/lyr-store)
