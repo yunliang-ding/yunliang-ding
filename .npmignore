@@ -1,10 +1,11 @@
 #npmignore
 !/dist
-/src
+src
+apis
 /docs
-/mock
-/.dumi
 /.github
+typings.d.ts
+build.js
 /docs-dist
 /.editorconfig                                      
 /.eslintignore                                      
@@ -12,6 +13,6 @@
 /.fatherrc.ts                                       
 /.prettierignore                                    
 /.prettierrc     
-/.umirc.ts
 tsconfig.json
-typings.d.ts
+yarn-error.log
+yarn.lock

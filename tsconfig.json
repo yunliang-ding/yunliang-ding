@@ -1,32 +1,14 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "importHelpers": true,
-    "jsx": "react-jsx",
+    "target": "es2021",
+    "module": "commonjs",
     "esModuleInterop": true,
-    "sourceMap": true,
-    "baseUrl": "./",
     "strict": false,
-    "paths": {
-      "@/*": ["src/*"],
-      "@@/*": ["src/.umi/*"],
-      "react": ["./node_modules/@types/react"]
-    },
-    "allowSyntheticDefaultImports": true
-    // "suppressImplicitAnyIndexErrors": true
+    "sourceMap": false,
+    "skipLibCheck": true,
+    "outDir": "./dist",
   },
   "exclude": [
     "node_modules",
-    "lib",
-    "es",
-    "mock",
-    "dist",
-    "typings",
-    "**/__test__",
-    "test",
-    "docs",
-    "tests"
   ]
 }

@@ -1,20 +1,9 @@
----
-order: 2
-title: Form 联动
-toc: menu
----
+>  在 Form.Item 属性上扩展了 effect 属性，来决定该组件的副作用，在 Form 的 onChange 事件中来发布通知
 
-<Alert>
-  在 Form.Item 属性上扩展了 effect 属性，来决定该组件的副作用，在 Form 的 onChange 事件中来发布通知
-</Alert>
+## 基本显示隐藏的联动
 
-### 示例
-
-```jsx | pure
-/**
- * 基本显示隐藏的联动
- **/
-import { Form } from 'lyr-design';
+```jsx
+import { Form } from 'lyr-component';
 
 export default () => {
   return (
@@ -50,11 +39,10 @@ export default () => {
 };
 ```
 
-```jsx | pure
-/**
- * 基本的属性切换
- **/
-import { Form } from 'lyr-design';
+## 基本的属性切换
+
+```jsx
+import { Form } from 'lyr-component';
 
 export default () => {
   return (
@@ -117,7 +105,7 @@ export default () => {
 };
 ```
 
-### 实现原理
+## 实现原理
 
 - 发布订阅模式
-- 具体源码和 Demo 参看 [Form](https://dev-ops.yunliang.cloud/website/lyr-design#/components/form-advance)
+- 具体源码和 Demo 参看 [Form](https://dev-ops.yunliang.cloud/website/lyr-component#/components/form-advance)

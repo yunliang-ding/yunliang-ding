@@ -1,17 +1,8 @@
----
-order: 2
-title: React 状态管理
-toc: menu
----
+> 打造 React 全新状态管理库
 
-<Alert>
-  打造 React 全新状态管理库
-</Alert>
+## 单一组件使用
 
-### 单一组件使用
-
-```jsx | pure
-import React from 'react';
+```jsx
 import { useReactive } from 'lyr-hooks';
 
 export default () => {
@@ -52,10 +43,9 @@ export default () => {
 };
 ```
 
-### 全局状态管理
+## 全局状态管理
 
-```jsx | pure
-import React from 'react';
+```jsx
 import { create } from 'lyr-hooks';
 
 export const store = create({
@@ -84,6 +74,6 @@ export default () => {
 };
 ```
 
-### 实现原理
+## 实现原理
 
 - 具体源码和 Demo 参看 [lyr-hooks](https://dev-ops.yunliang.cloud/website/lyr-hooks)

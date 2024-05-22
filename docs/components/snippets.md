@@ -1,16 +1,6 @@
----
-order: 3
-title: Vscode 代码片段
-toc: menu
----
+> 自定义 snippets
 
-<Alert>
-  自定义 snippets
-</Alert>
-
-- 创建 .vscode/yunliang.code-snippet，内容如下即可
-
-### 基础配置
+### 创建 .vscode/yunliang.code-snippet，内容如下即可
 
 ```json
 {
