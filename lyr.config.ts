@@ -1,7 +1,7 @@
 import { defineConfig } from 'lyr';
 
 export default defineConfig({
-  title: 'Yunliang Ding',
+  title: '我的主页',
   favicon:
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/assets/user-logo.png',
   link: [
