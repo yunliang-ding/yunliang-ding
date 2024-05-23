@@ -16,8 +16,7 @@
   },
   "devDependencies": {
     "react": "17.0.2",
-    "lyr-extra": "0.0.7",
-    "lyr-docs": "0.0.26",
+    "lyr-docs": "0.0.28",
     "prettier": "^2.2.1",
     "typescript": "5.3.3"
   },

@@ -2,7 +2,8 @@ import { defineConfig } from 'lyr';
 
 export default defineConfig({
   title: 'Yunliang Ding',
-  favicon: 'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/assets/user-logo.png',
+  favicon:
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/assets/user-logo.png',
   link: [
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/arco.min.css',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-component.min.css',
@@ -22,7 +23,8 @@ export default defineConfig({
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/babel-standalone.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prettier-standalone.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prettier-parser-typescript.min.js',
-    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/spider.web.min.js'
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/spider.web.min.js',
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-extra.min.js',
   ],
   buildScript: [
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/react.production.min.js',
@@ -40,7 +42,8 @@ export default defineConfig({
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/babel-standalone.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prettier-standalone.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prettier-parser-typescript.min.js',
-    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/spider.web.min.js'
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/spider.web.min.js',
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-extra.min.js',
   ],
   serverPath: '/apis',
   menus: [
@@ -51,38 +54,48 @@ export default defineConfig({
     {
       label: 'Blog',
       path: '/components',
-      children: [{
-        label: 'Drawer 扩展',
-        path: '/components/drawer',
-      }, {
-        label: 'Form 扩展',
-        path: '/components/form',
-      }, {
-        label: 'Button 扩展',
-        path: '/components/button',
-      }, {
-        label: 'React 状态管理',
-        path: '/components/state',
-      }, {
-        label: 'Vscode 代码片段',
-        path: '/components/snippets',
-      }]
+      children: [
+        {
+          label: 'Drawer 扩展',
+          path: '/components/drawer',
+        },
+        {
+          label: 'Form 扩展',
+          path: '/components/form',
+        },
+        {
+          label: 'Button 扩展',
+          path: '/components/button',
+        },
+        {
+          label: 'React 状态管理',
+          path: '/components/state',
+        },
+        {
+          label: 'Vscode 代码片段',
+          path: '/components/snippets',
+        },
+      ],
     },
     {
       label: '面试相关',
       path: '/interview',
-      children: [{
-        label: '大文件上传',
-        path: '/interview/upload',
-      }]
+      children: [
+        {
+          label: '大文件上传',
+          path: '/interview/upload',
+        },
+      ],
     },
     {
       label: '基础算法题',
       path: '/algorithm',
-      children: [{
-        label: '二分查找',
-        path: '/algorithm/binary-search',
-      }]
+      children: [
+        {
+          label: '二分查找',
+          path: '/algorithm/binary-search',
+        },
+      ],
     },
   ],
 });
