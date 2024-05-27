@@ -85,6 +85,10 @@ export default defineConfig({
           label: '大文件上传',
           path: '/interview/upload',
         },
+        {
+          label: '下载文件',
+          path: '/interview/fetch',
+        },
       ],
     },
     {
