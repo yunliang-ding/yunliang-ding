@@ -107,7 +107,7 @@ export default defineConfig({
       ],
     },
     {
-      label: '更新日志',
+      label: '开发日志',
       path: '/log',
     },
   ],
