@@ -45,6 +45,11 @@ export default defineConfig({
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/spider.web.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-extra.min.js',
   ],
+  docsRequire: {
+    ArcoDesign: '@arco-design/web-react',
+    ArcoIcon: '@arco-design/web-react/icon',
+    axios: "axios",
+  },
   serverPath: '/apis',
   menus: [
     {
@@ -100,6 +105,10 @@ export default defineConfig({
           path: '/algorithm/binary-search',
         },
       ],
+    },
+    {
+      label: '更新日志',
+      path: '/log',
     },
   ],
 });

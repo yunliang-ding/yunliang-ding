@@ -13,15 +13,20 @@ fetch(url, {
   body: JSON.stringify({ name: 12 }),
 })
   .then((res) => {
-    // 获取文件名
-    const contentDisposition = res.headers.get('content-disposition');
-    const filename = decodeURIComponent(
-      contentDisposition?.split('=')?.[1] || '',
-    );
-    return {
-      bolb: res.blob(),
-      filename,
-    };
+    const contentDisposition = res.headers.get("content-disposition");
+    const contentType = res.headers.get("content-type");
+    // 先判断接口是否异常
+    if (contentType === "application/json") {
+      const info = await res.json();
+      if (info.msg) {
+        return message.error(info.msg);
+      }
+    } else if (contentType === "application/octet-stream") {
+      return {
+        blob: await res.blob(),
+        filename: decodeURIComponent(contentDisposition?.split("=")?.[1] || "")
+      };
+    }
   })
   .then(({ blob, filename }: any) => {
     const url = URL.createObjectURL(
