@@ -80,6 +80,10 @@ export default defineConfig({
           label: 'Vscode 代码片段',
           path: '/components/snippets',
         },
+        {
+          label: 'Monaco 使用 dark+ 主题',
+          path: '/components/monaco-theme',
+        },
       ],
     },
     {
