@@ -2,7 +2,7 @@
 
 ### 创建 .vscode/yunliang.code-snippet，内容如下即可
 
-```json
+```js
 {
   "create": {
     "key": "create",
