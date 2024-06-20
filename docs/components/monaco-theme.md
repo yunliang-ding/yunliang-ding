@@ -2,16 +2,71 @@
 
 - 部分内容参考 [手把手教你实现在 Monaco Editor 中使用 VSCode 主题](https://juejin.cn/post/7012514944579502116)
 - 在 vscode 运行 命令 Generate Color Theme From Current Settings
-- 复制一下 主题 json，拷贝工程 theme 文件夹下
+- 复制一下 主题 json
 
-## 参考设置主题代码
+## 转换函数 covertTheme
+
+```ts
+export default (theme, addDefaultToken = true, defaultColor = '#ffffff') => {
+  if (typeof theme === 'string') {
+    theme = JSON.parse(
+      theme.replace(/(\/\/").+?[\n\r\t]/g, '').replace(/,[\n\r\t]*\}/, '}'),
+    );
+  }
+  const monacoThemeRule = [];
+  const returnTheme = {
+    inherit: false,
+    base: theme.type === 'light' ? 'vs' : 'vs-dark',
+    colors: theme.colors,
+    rules: monacoThemeRule,
+    encodedTokensColors: [],
+  };
+  theme.tokenColors.map((color) => {
+    function evalAsArray() {
+      if (color.scope) {
+        color.scope.map((scope) => {
+          monacoThemeRule.push(
+            Object.assign({}, color.settings, {
+              token: scope,
+            }),
+          );
+        });
+      }
+    }
+    if (typeof color.scope == 'string') {
+      const split = color.scope.split(',');
+      if (split.length > 1) {
+        color.scope = split;
+        evalAsArray();
+        return;
+      }
+      monacoThemeRule.push(
+        Object.assign({}, color.settings, {
+          token: color.scope,
+        }),
+      );
+      return;
+    }
+    evalAsArray();
+  });
+  if (addDefaultToken) {
+    monacoThemeRule.push({
+      token: '',
+      foreground: theme.colors['editor.foreground'] || defaultColor,
+    });
+  }
+  return returnTheme;
+};
+```
+
+## 设置主题
 
 ```tsx
-import * as vscodeThemeToMonacoThemeWeb from 'vscode-theme-to-monaco-theme-web';
 import { wireTmGrammars } from 'monaco-editor-textmate';
 import { loadWASM } from 'onigasm';
 import { Registry } from 'monaco-textmate';
-import darkPlus from './theme/dark-plus.json'; // 这个 json 就是第一步拷贝的 vscode 主题
+import covertTheme from './convert-theme';
+import darkPlus from './dark-plus.json'; // 这个 json 就是第一步拷贝的 vscode 主题
 
 const OssUrl = 'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/monaco';
 
@@ -59,10 +114,7 @@ export const loadVscodeTheme = async (monaco, editor, language) => {
   // 注册
   monaco.languages.register({ id: language });
   // 重新覆盖主题
-  monaco.editor.defineTheme(
-    'vs-dark',
-    vscodeThemeToMonacoThemeWeb.convertTheme(darkPlus),
-  );
+  monaco.editor.defineTheme('vs-dark', convertTheme(darkPlus));
   setTimeout(() => {
     wireTmGrammars(monaco, registry, grammars, editor);
   }, 100);
@@ -89,7 +141,7 @@ export default () => {
             return { label: i + '列', value: i };
           })}
         />
-      <Form.Item>
+      </Form.Item>
     </Form>
   );
 };`}
