@@ -23,7 +23,8 @@ export default defineConfig({
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/babel-standalone.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prettier-standalone.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prettier-parser-typescript.min.js',
-    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/spider.web.min.js',
+    // 'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/spider.web.min.js',
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-code-editor.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-extra.min.js',
   ],
   buildScript: [
@@ -42,13 +43,22 @@ export default defineConfig({
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/babel-standalone.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prettier-standalone.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prettier-parser-typescript.min.js',
-    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/spider.web.min.js',
+    // 'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/spider.web.min.js',
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-code-editor.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-extra.min.js',
   ],
   docsRequire: {
     ArcoDesign: '@arco-design/web-react',
     ArcoIcon: '@arco-design/web-react/icon',
     axios: "axios",
+    LyrCodeEditor: "lyr-code-editor"
+  },
+  webpackConfig(){
+    return {
+      externals: {
+        'lyr-code-editor': "lyrCodeEditor"
+      }
+    }
   },
   serverPath: '/apis',
   menus: [
