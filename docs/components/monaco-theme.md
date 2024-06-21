@@ -129,8 +129,7 @@ import { CodeEditor } from 'lyr-code-editor';
 export default () => {
   return (
     <CodeEditor
-      value={`import { useState } from 'react';
-import { Form, Select } from '@arco-design/web-react';
+      value={`import { Form, Select } from '@arco-design/web-react';
 
 export default () => {
   return (
@@ -145,7 +144,7 @@ export default () => {
     </Form>
   );
 };`}
-      lanaguage="javascriptreact"
+      lanaguage="javascript"
       style={{ width: '100%', height: 500 }}
     />
   );
