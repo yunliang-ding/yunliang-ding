@@ -72,31 +72,31 @@ export default defineConfig({
     },
     {
       label: 'Blog',
-      path: '/components',
+      path: '/blog',
       children: [
         {
           label: 'Drawer 扩展',
-          path: '/components/drawer',
+          path: '/blog/drawer',
         },
         {
           label: 'Form 扩展',
-          path: '/components/form',
+          path: '/blog/form',
         },
         {
           label: 'Button 扩展',
-          path: '/components/button',
+          path: '/blog/button',
         },
         {
           label: 'React 状态管理',
-          path: '/components/state',
+          path: '/blog/state',
         },
         {
           label: 'Vscode 代码片段',
-          path: '/components/snippets',
+          path: '/blog/snippets',
         },
         {
           label: 'Monaco 使用 dark+ 主题',
-          path: '/components/monaco-theme',
+          path: '/blog/monaco-theme',
         },
       ],
     },
