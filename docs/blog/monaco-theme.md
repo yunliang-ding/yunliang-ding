@@ -66,7 +66,7 @@ import { wireTmGrammars } from 'monaco-editor-textmate';
 import { loadWASM } from 'onigasm';
 import { Registry } from 'monaco-textmate';
 import covertTheme from './convert-theme';
-import darkPlus from './dark-plus.json'; // 这个 json 就是第一步拷贝的 vscode 主题
+import oneDarkPro from './one-dark-pro.json'; // 这个 json 就是第一步拷贝的 vscode 主题
 
 const OssUrl = 'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/monaco';
 
@@ -114,7 +114,7 @@ export const loadVscodeTheme = async (monaco, editor, language) => {
   // 注册
   monaco.languages.register({ id: language });
   // 重新覆盖主题
-  monaco.editor.defineTheme('vs-dark', convertTheme(darkPlus));
+  monaco.editor.defineTheme('vs-dark', convertTheme(oneDarkPro));
   setTimeout(() => {
     wireTmGrammars(monaco, registry, grammars, editor);
   }, 100);
