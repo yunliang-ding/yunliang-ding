@@ -52,10 +52,10 @@ export default defineConfig({
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-extra.min.js',
   ],
   docsRequire: {
+    axios: "axios",
     ArcoDesign: '@arco-design/web-react',
     ArcoIcon: '@arco-design/web-react/icon',
-    axios: "axios",
-    LyrCodeEditor: "lyr-code-editor"
+    LyrCodeEditor: "lyr-code-editor",
   },
   webpackConfig(){
     return {
@@ -98,6 +98,10 @@ export default defineConfig({
           label: 'Monaco 使用 dark+ 主题',
           path: '/blog/monaco-theme',
         },
+        {
+          label: '使用 fetch 分块读取内容',
+          path: '/blog/fetch',
+        },
       ],
     },
     {
@@ -110,7 +114,7 @@ export default defineConfig({
         },
         {
           label: '下载文件',
-          path: '/interview/fetch',
+          path: '/interview/download',
         },
       ],
     },
