@@ -2,16 +2,15 @@
 
 ```jsx | react
 import { useState } from 'react';
-import { Space, Button } from '@arco-design/web-react';
+import { Space } from '@arco-design/web-react';
+import { Button } from 'lyr-component';
 
 let controller;
 
 export default () => {
   const [content, setContent] = useState('');
-  const [spin, setSpin] = useState('');
   const send = async () => {
     controller = new AbortController();
-    setSpin(true);
     let str = '';
     try {
       const response = await fetch('https://api-online.yunliang.cloud/sse', {
@@ -22,7 +21,6 @@ export default () => {
       while (1) {
         const { done, value } = await reader.read();
         if (done) {
-          setSpin(false);
           break;
         }
         str = str + textDecoder.decode(value);
@@ -37,14 +35,13 @@ export default () => {
   return (
     <div>
       <Space>
-        <Button type="primary" loading={spin} onClick={send}>
+        <Button type="primary" spin onClick={send}>
           Send
         </Button>
         <Button
           status="warning"
           onClick={() => {
             controller.abort('hello');
-            setSpin(false);
           }}
         >
           Stop
@@ -59,6 +56,8 @@ export default () => {
 ```
 
 ## 服务端代码
+
+> 这里注意再部署 nginx 的时候，关闭代理缓冲区 proxy_buffering off;
 
 ```js
 module.exports = class extends think.Controller {

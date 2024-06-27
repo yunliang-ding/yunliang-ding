@@ -1,5 +1,5 @@
 module.exports = class extends think.Controller {
-  indexAction() {
+  indexActio() {
     const { PassThrough } = require('stream');
     const stream = new PassThrough();
     const strArr =
@@ -39,11 +39,13 @@ React 的优点:
       stream.write(str);
       if (index === strArr.length) {
         clearInterval(timer);
+        stream.end();
       }
     }, 30);
     // 监听取消请求
     this.ctx.req.on('close', () => {
       clearInterval(timer);
-    })
+      stream.end();
+    });
   }
 };

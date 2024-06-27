@@ -56,6 +56,7 @@ export default defineConfig({
     ArcoDesign: '@arco-design/web-react',
     ArcoIcon: '@arco-design/web-react/icon',
     LyrCodeEditor: "lyr-code-editor",
+    lyr: "lyr-component",
   },
   webpackConfig(){
     return {
