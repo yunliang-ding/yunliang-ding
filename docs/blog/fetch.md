@@ -14,7 +14,7 @@ export default () => {
     setSpin(true);
     let str = '';
     try {
-      const response = await fetch('/sse', {
+      const response = await fetch('https://api-online.yunliang.cloud/sse', {
         signal: controller.signal,
       });
       const reader = response.body.getReader();
@@ -102,6 +102,7 @@ React 的优点:
       stream.write(str);
       if (index === strArr.length) {
         clearInterval(timer);
+        stream.end();
       }
     }, 30);
     // 监听取消请求
