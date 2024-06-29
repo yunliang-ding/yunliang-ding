@@ -11,6 +11,7 @@ export default defineConfig({
     "https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/highlight.atom-one-light.min.css",
   ],
   devScript: [
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/shiki.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/react.development.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/react-dom.development.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/router.development.js',
@@ -31,6 +32,7 @@ export default defineConfig({
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-extra.min.js',
   ],
   buildScript: [
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/shiki.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/react.production.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/react-dom.production.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/router.production.js',

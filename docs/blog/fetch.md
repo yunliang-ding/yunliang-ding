@@ -57,11 +57,9 @@ export default () => {
 
 ## 服务端代码
 
-> 这里注意再部署 nginx 的时候，关闭代理缓冲区 proxy_buffering off;
-
 ```js
 module.exports = class extends think.Controller {
-  indexAction() {
+  indexActio() {
     const { PassThrough } = require('stream');
     const stream = new PassThrough();
     const strArr =
@@ -107,7 +105,10 @@ React 的优点:
     // 监听取消请求
     this.ctx.req.on('close', () => {
       clearInterval(timer);
+      stream.end();
     });
   }
 };
 ```
+
+> 这里注意再部署 nginx 的时候，关闭代理缓冲区 proxy_buffering off;
