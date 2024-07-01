@@ -8,10 +8,10 @@ export default defineConfig({
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/arco.min.css',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-component.min.css',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/monaco-file-icon.css',
-    "https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/highlight.atom-one-light.min.css",
   ],
   devScript: [
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/shiki.min.js',
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/react-markdown.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/react.development.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/react-dom.development.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/router.development.js',
@@ -27,12 +27,11 @@ export default defineConfig({
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prettier-standalone.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prettier-parser-typescript.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-code-editor.min.js',
-    "https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/highlight.min.js",
-    "https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/highlight.javascript.min.js",
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-extra.min.js',
   ],
   buildScript: [
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/shiki.min.js',
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/react-markdown.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/react.production.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/react-dom.production.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/router.production.js',
@@ -49,8 +48,6 @@ export default defineConfig({
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prettier-standalone.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prettier-parser-typescript.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-code-editor.min.js',
-    "https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/highlight.min.js",
-    "https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/highlight.javascript.min.js",
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-extra.min.js',
   ],
   docsRequire: {
@@ -59,13 +56,6 @@ export default defineConfig({
     ArcoIcon: '@arco-design/web-react/icon',
     LyrCodeEditor: "lyr-code-editor",
     lyr: "lyr-component",
-  },
-  webpackConfig(){
-    return {
-      externals: {
-        'lyr-code-editor': "lyrCodeEditor"
-      }
-    }
   },
   serverPath: '/apis',
   menus: [
