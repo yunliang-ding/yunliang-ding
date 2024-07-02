@@ -119,7 +119,7 @@ export const loadVscodeTheme = async (monaco, editor, language) => {
 };
 ```
 
-## 效果如下
+## 预览效果
 
 ```jsx | react
 import { CodeEditor } from 'lyr-code-editor';
@@ -188,3 +188,7 @@ export const loadVscodeTheme = async (monaco, editor, language) => {
   );
 };
 ```
+
+## 使用 @shikijs/monaco
+
+[参看](https://shiki.tmrs.site/packages/monaco)
