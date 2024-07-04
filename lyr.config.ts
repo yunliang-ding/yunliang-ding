@@ -8,9 +8,10 @@ export default defineConfig({
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/arco.min.css',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-component.min.css',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/monaco-file-icon.css',
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prism.light.css',
   ],
   devScript: [
-    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/react-markdown.min.js',
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prism.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/react.development.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/react-dom.development.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/router.development.js',
@@ -25,6 +26,7 @@ export default defineConfig({
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-extra.min.js',
   ],
   buildScript: [
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prism.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/react-markdown.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/react.production.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/react-dom.production.min.js',
@@ -41,7 +43,6 @@ export default defineConfig({
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/track.min.js',
   ],
   esmScript: {
-    shiki: 'await import("https://esm.sh/shiki@1.0.0")',
     lyr: 'await import("https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/esm/lyr-component.js")'
   },
   docsRequire: {
