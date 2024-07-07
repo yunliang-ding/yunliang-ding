@@ -3,7 +3,7 @@
 ## 基本显示隐藏的联动
 
 ```jsx
-import { Form } from 'lyr-component';
+import { Form } from '@yl-d/components';
 
 export default () => {
   return (
@@ -42,7 +42,7 @@ export default () => {
 ## 基本的属性切换
 
 ```jsx
-import { Form } from 'lyr-component';
+import { Form } from '@yl-d/components';
 
 export default () => {
   return (
@@ -108,4 +108,4 @@ export default () => {
 ## 实现原理
 
 - 发布订阅模式
-- 具体源码和 Demo 参看 [Form](https://dev-ops.yunliang.cloud/website/lyr-component#/components/form-advance)
+- 具体源码和 Demo 参看 [Form](https://dev-ops.yunliang.cloud/website/@yl-d/components#/components/form-advance)

@@ -122,7 +122,7 @@ export const loadVscodeTheme = async (monaco, editor, language) => {
 ## 预览效果
 
 ```jsx | react
-import { CodeEditor } from 'lyr-code-editor';
+import { CodeEditor } from '@yl-d/code-editor';
 
 export default () => {
   return (

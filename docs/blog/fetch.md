@@ -3,7 +3,7 @@
 ```jsx | react
 import { useState } from 'react';
 import { Space } from '@arco-design/web-react';
-import { Button } from 'lyr-component';
+import { Button } from '@yl-d/components';
 
 let controller;
 

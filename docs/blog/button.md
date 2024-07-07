@@ -3,7 +3,7 @@
 ## 配置 spin，开启自动 loading
 
 ```tsx
-import { Button } from 'lyr-component';
+import { Button } from '@yl-d/components';
 
 const submit = () => new Promise((res) => setTimeout(res, 1000));
 
@@ -19,7 +19,7 @@ export default () => {
 ## 配置 comfirm 二次确认
 
 ```tsx
-import { Button } from 'lyr-component';
+import { Button } from '@yl-d/components';
 
 export default () => {
   return (
@@ -38,7 +38,7 @@ export default () => {
 ## 配置 tooltip
 
 ```tsx
-import { Button } from 'lyr-component';
+import { Button } from '@yl-d/components';
 
 export default () => {
   return <Button tooltip="我是提示文案">提交</Button>;
@@ -48,7 +48,7 @@ export default () => {
 ## 配置权限
 
 ```tsx
-import { Button } from 'lyr-component';
+import { Button } from '@yl-d/components';
 
 Button.setAuth({
   'user-create': '新增用户',
@@ -61,4 +61,4 @@ export default () => {
 
 ## 实现原理
 
-- 具体源码和 Demo 参看 [Button](https://dev-ops.yunliang.cloud/website/lyr-component#/other/button)
+- 具体源码和 Demo 参看 [Button](https://dev-ops.yunliang.cloud/website/@yl-d/components#/other/button)
