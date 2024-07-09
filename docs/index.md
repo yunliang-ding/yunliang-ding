@@ -14,31 +14,39 @@ export default () => {
     <div style={{ display: 'flex', gap: 10 }}>
       <img
         style={{ width: 30 }}
-        src="https://lucifer.ren/fe-interview/assets/imgs/topics/js/js-cover.png"
+        src="https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/image/js-cover.png"
       />
       <img
         style={{ width: 30 }}
-        src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
+        src="https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/image/typescript-cover.png"
       />
       <img
         style={{ width: 30 }}
-        src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
+        src="https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/image/react-cover.png"
       />
       <img
         style={{ width: 30 }}
-        src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"
+        src="https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/image/nodejs-cover.png"
       />
       <img
         style={{ width: 30 }}
-        src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/webpack/webpack.png"
+        src="https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/image/webpack-cover.png"
       />
       <img
         style={{ width: 30 }}
-        src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/babel/babel.png"
+        src="https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/image/vite-cover.png"
       />
       <img
         style={{ width: 30 }}
-        src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"
+        src="https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/image/babel-cover.png"
+      />
+      <img
+        style={{ width: 36 }}
+        src="https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/image/arco-cover.png"
+      />
+      <img
+        style={{ width: 30 }}
+        src="https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/image/antd-cover.png"
       />
     </div>
   );

@@ -120,6 +120,16 @@ export default defineConfig({
       ],
     },
     {
+      label: '相关模版',
+      path: '/template',
+      children: [
+        {
+          label: 'float-ui',
+          path: '/template/float-ui',
+        },
+      ],
+    },
+    {
       label: '开发日志',
       path: '/log',
     },
