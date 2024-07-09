@@ -121,7 +121,7 @@ export const loadVscodeTheme = async (monaco, editor, language) => {
 
 ## 预览效果
 
-```jsx | react
+```jsx | pureReact
 import { CodeEditor } from '@yl-d/code-editor';
 
 export default () => {

@@ -10,7 +10,7 @@
     "description": "create store",
     "body": [
       "/* eslint-disable indent */"
-      "import { create } from \"lyr-hooks\";",
+      "import { create } from \"@yl-d/components\";",
       "import { FormInstance } from \"antd\";",
       "",
       "export default create<{",

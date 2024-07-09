@@ -3,7 +3,7 @@
 ## 单一组件使用
 
 ```jsx
-import { useReactive } from 'lyr-hooks';
+import { useReactive } from '@yl-d/components';
 
 export default () => {
   const state = useReactive({
@@ -46,9 +46,9 @@ export default () => {
 ## 全局状态管理
 
 ```jsx
-import { create } from 'lyr-hooks';
+import { createStore } from '@yl-d/components';
 
-export const store = create({
+export const store = createStore({
   count: 1,
   age: 1,
   addCount() {
@@ -57,7 +57,7 @@ export const store = create({
 });
 
 export default () => {
-  const { age } = store.use();
+  const { age } = store.useSnapshot();
   console.log('demo1 render...');
   return (
     <div>
@@ -76,4 +76,4 @@ export default () => {
 
 ## 实现原理
 
-- 具体源码和 Demo 参看 [lyr-hooks](https://dev-ops.yunliang.cloud/website/lyr-hooks)
+- 参看 [@yl-d/components](https://dev-ops.yunliang.cloud/website/lyr-component#/hooks/create)

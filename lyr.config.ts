@@ -58,31 +58,31 @@ export default defineConfig({
       path: '/',
     },
     {
-      label: 'Blog',
+      label: 'blog',
       path: '/blog',
       children: [
         {
-          label: 'Drawer 扩展',
+          label: 'drawer 扩展',
           path: '/blog/drawer',
         },
         {
-          label: 'Form 扩展',
+          label: 'form 扩展',
           path: '/blog/form',
         },
         {
-          label: 'Button 扩展',
+          label: 'button 扩展',
           path: '/blog/button',
         },
         {
-          label: 'React 状态管理',
+          label: 'react 状态管理',
           path: '/blog/state',
         },
         {
-          label: 'Vscode 代码片段',
+          label: 'vscode snippets',
           path: '/blog/snippets',
         },
         {
-          label: 'Monaco 使用 vscode 主题',
+          label: 'monaco 使用 vscode 主题',
           path: '/blog/monaco-theme',
         },
         {
