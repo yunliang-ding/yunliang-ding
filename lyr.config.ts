@@ -82,12 +82,16 @@ export default defineConfig({
           path: '/blog/snippets',
         },
         {
-          label: 'Monaco 使用 dark+ 主题',
+          label: 'Monaco 使用 vscode 主题',
           path: '/blog/monaco-theme',
         },
         {
           label: '使用 fetch 分块读取内容',
           path: '/blog/fetch',
+        },
+        {
+          label: '解析字符串代码',
+          path: '/blog/babel-parse',
         },
       ],
     },
