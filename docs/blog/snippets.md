@@ -1,6 +1,6 @@
 > 自定义 snippets
 
-### 创建 .vscode/yunliang.code-snippet，内容如下即可
+### 创建 .vscode/my.code-snippet，内容如下即可
 
 ```json
 {

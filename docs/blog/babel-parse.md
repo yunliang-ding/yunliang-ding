@@ -59,3 +59,7 @@ const runCode = () => {
 3. 获取结果
 
 > 运行 runCode，拿到结果即可
+
+## 更多 demo
+
+- Demo 参看 [babelParse](https://dev-ops.yunliang.cloud/website/lyr-extra#/components/babel-parse)

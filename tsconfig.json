@@ -7,6 +7,9 @@
     "sourceMap": false,
     "skipLibCheck": true,
     "outDir": "./dist",
+    "paths": {
+      "lyr": ["./src/.lyr"],
+    }
   },
   "exclude": [
     "node_modules",

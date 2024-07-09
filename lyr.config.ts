@@ -90,7 +90,7 @@ export default defineConfig({
           path: '/blog/fetch',
         },
         {
-          label: '解析字符串代码',
+          label: '字符串代码',
           path: '/blog/babel-parse',
         },
       ],
