@@ -15,7 +15,7 @@
     "url": "https://github.com/yunliang-ding/yunliang-ding"
   },
   "devDependencies": {
-    "@yl-d/docs": "1.0.0"
+    "@yl-d/docs": "1.0.6"
   },
   "license": "MIT",
   "publishConfig": {
