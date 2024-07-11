@@ -43,11 +43,11 @@ export default defineConfig({
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/track.min.js',
   ],
   docsRequire: {
-    axios: "axios",
+    axios: 'axios',
     ArcoDesign: '@arco-design/web-react',
     ArcoIcon: '@arco-design/web-react/icon',
-    LyrCodeEditor: "@yl-d/code-editor",
-    lyr: "@yl-d/components",
+    LyrCodeEditor: '@yl-d/code-editor',
+    lyr: '@yl-d/components',
   },
   serverPath: '/apis',
   menus: [
@@ -90,6 +90,10 @@ export default defineConfig({
         {
           label: '字符串代码',
           path: '/blog/babel-parse',
+        },
+        {
+          label: '基于monaco的语法高亮',
+          path: '/blog/syntax-hightlight',
         },
       ],
     },
