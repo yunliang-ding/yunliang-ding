@@ -22,7 +22,7 @@ export default {
 
 ## 修改部分样式
 
-> 不展示链接线，选中行样式，以及光标样式
+> 不展示链接线、选中行样式、光标样式、readonly 的悬浮提示
 
 ```less
 .monaco-editor {
