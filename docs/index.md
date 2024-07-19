@@ -82,6 +82,7 @@ export default () => {
         position: 'fixed',
         bottom: 10,
         right: 10,
+        zIndex: 9
       }}
       href="https://beian.miit.gov.cn"
     >
