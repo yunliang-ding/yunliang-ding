@@ -76,4 +76,4 @@ export default () => {
 
 ## 实现原理
 
-- 参看 [@yl-d/components](https://dev-ops.yunliang.cloud/website/lyr-component#/hooks/create)
+- 参看 [@yl-d/components](https://dev-ops.yunliang.cloud/website/packages#/components/hooks/create)

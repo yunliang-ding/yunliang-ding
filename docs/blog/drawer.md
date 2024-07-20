@@ -18,4 +18,4 @@ const userDrawer = CreateDrawer({
 ## 实现原理
 
 - 基于 ReactDOM.render 将 Drawer 组件内容 append 到指定的容器
-- 具体源码和 Demo 参看 [CreateDrawer](https://dev-ops.yunliang.cloud/website/lyr-component#/components/create-drawer)
+- 具体源码和 Demo 参看 [CreateDrawer](https://dev-ops.yunliang.cloud/website/packages#/components/form/create-drawer)
