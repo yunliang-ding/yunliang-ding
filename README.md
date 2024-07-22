@@ -2,7 +2,7 @@
 
 - 🙋 my blog: [主页](https://www.yunliang.cloud)
 
-- 🌱 my currently released npm package: [@yl-d/cli](https://dev-ops.yunliang.cloud/website/lyr-cli) [@yl-d/docs](https://dev-ops.yunliang.cloud/website/lyr-docs) [@yl-d/components](https://dev-ops.yunliang.cloud/website/packages#/components) [@yl-d/shared](https://dev-ops.yunliang.cloud/website/packages#/shared) [@yl-d/code-editor](https://dev-ops.yunliang.cloud/website/packages#/code-editor) [@yl-d/low-code](https://dev-ops.yunliang.cloud/website/packages#/low-code) 
+- 🌱 my currently released npm package: [@yl-d/cli](https://dev-ops.yunliang.cloud/website/packages#/cli) [@yl-d/docs](https://dev-ops.yunliang.cloud/website/packages#/doc) [@yl-d/components](https://dev-ops.yunliang.cloud/website/packages#/components) [@yl-d/shared](https://dev-ops.yunliang.cloud/website/packages#/shared) [@yl-d/code-editor](https://dev-ops.yunliang.cloud/website/packages#/code-editor) [@yl-d/low-code](https://dev-ops.yunliang.cloud/website/packages#/low-code) 
 
 - 🤔 The personal application that I am currently creating: [代码演示台](https://playground.yunliang.cloud) [crud 模型](https://crud.yunliang.cloud) [在线音乐](https://music.yunliang.cloud)
 
