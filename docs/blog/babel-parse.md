@@ -62,4 +62,4 @@ const runCode = () => {
 
 ## 更多 demo
 
-- Demo 参看 [babelParse](https://dev-ops.yunliang.cloud/website/lyr-extra#/components/babel-parse)
+- Demo 参看 [babelParse](https://packages.yunliang.cloud/#/shared/components/babel-parse)

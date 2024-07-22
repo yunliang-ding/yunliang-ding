@@ -38,4 +38,4 @@ export default {
 
 ## demo 查看
 
-- 参看 [@yl-d/code-editor](https://dev-ops.yunliang.cloud/website/lyr-code-editor)
+- 参看 [@yl-d/code-editor](https://packages.yunliang.cloud/#/code-editor)
