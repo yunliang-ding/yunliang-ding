@@ -2,7 +2,7 @@
 
 Here are some ideas to get you started:
 
-- 🌱 my currently released npm package: [@yl-d/cli](https://dev-ops.yunliang.cloud/website/packages#/cli) [@yl-d/docs](https://dev-ops.yunliang.cloud/website/packages#/doc) [@yl-d/components](https://dev-ops.yunliang.cloud/website/packages#/components) [@yl-d/shared](https://dev-ops.yunliang.cloud/website/packages#/shared) [@yl-d/code-editor](https://dev-ops.yunliang.cloud/website/packages#/code-editor) [@yl-d/low-code](https://dev-ops.yunliang.cloud/website/packages#/low-code) 
+- 🌱 my currently released npm package: [@yl-d/cli](https://packages.yunliang.cloud#/cli) [@yl-d/docs](https://packages.yunliang.cloud#/doc) [@yl-d/components](https://packages.yunliang.cloud#/components) [@yl-d/shared](https://packages.yunliang.cloud#/shared) [@yl-d/code-editor](https://packages.yunliang.cloud#/code-editor) [@yl-d/low-code](https://packages.yunliang.cloud#/low-code) 
 
 - 🤔 The personal application that I am currently creating: [代码演示台](https://playground.yunliang.cloud) [crud 模型](https://crud.yunliang.cloud) [在线音乐](https://music.yunliang.cloud)
 

@@ -108,4 +108,4 @@ export default () => {
 ## 实现原理
 
 - 发布订阅模式
-- 具体源码和 Demo 参看 [Form](https://dev-ops.yunliang.cloud/website/packages#/components/form/form-advance)
+- 具体源码和 Demo 参看 [Form](https://packages.yunliang.cloud#/components/form/form-advance)
