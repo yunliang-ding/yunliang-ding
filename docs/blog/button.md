@@ -61,4 +61,4 @@ export default () => {
 
 ## 实现原理
 
-- 具体源码和 Demo 参看 [Button](https://packages.yunliang.cloud#/components/other/button)
+- 具体源码和 Demo 参看 [Button](https://packages.yunliang.cloud#/pro-components/other/button)

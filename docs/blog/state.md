@@ -76,4 +76,4 @@ export default () => {
 
 ## 实现原理
 
-- 参看 [@yl-d/components](https://packages.yunliang.cloud#/components/state/create-store)
+- 参看 [@yl-d/components](https://packages.yunliang.cloud#/pro-components/state/create-store)
